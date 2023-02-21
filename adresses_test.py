@@ -50,3 +50,7 @@ def test_create_address():
     id = resultAddress['id']
 
     response = requests.delete(addresses_url + '/' + id, auth=auth)
+    
+def test_delete_address():
+    response = requests.delete(addresses_url + '/' + id, auth=auth)
+    assert response.status_code == 200
