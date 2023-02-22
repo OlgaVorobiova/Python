@@ -14,4 +14,4 @@ for key in myDict:
     sum = myDict[key] + sum
     print(key + menu_delimiter[len(key):-len(valueStr)] + valueStr + ' grn')
 
-print('...\n' + str(sum) + ' grn')
+print('...\n' + 'Total:' + str(sum) + ' grn')
